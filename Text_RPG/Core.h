@@ -1,4 +1,5 @@
 #pragma once
+#include "MainMenu.h"
 class Core
 {
 private:
@@ -7,6 +8,8 @@ private:
 	
 
 public:
+
+	MainMenu* m_Main_Menu;
 
 	void Init_Variable();
 

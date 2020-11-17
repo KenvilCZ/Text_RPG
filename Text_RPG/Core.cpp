@@ -3,10 +3,12 @@
 void Core::Init_Variable()
 {
 	this->Exit = false;
+	this->m_Main_Menu = new MainMenu;
 }
 
-Core::Core()
+Core::Core() : Exit(false)
 {
+	this->Init_Variable();
 }
 
 Core::~Core()
@@ -16,7 +18,7 @@ Core::~Core()
 
 void Core::Update()
 {
-	
+	this->m_Main_Menu->Update();
 }
 
 void Core::Run()
