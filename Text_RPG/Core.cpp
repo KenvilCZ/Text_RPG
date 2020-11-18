@@ -18,6 +18,7 @@ Core::~Core()
 
 void Core::Update()
 {
+
 	this->m_Main_Menu->Update();
 }
 

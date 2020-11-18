@@ -1,7 +1,6 @@
 #include "MainMenu.h"
 
 
-
 void MainMenu::Init_Variable()
 {
 	this->Menu_Selection = 0;
@@ -16,15 +15,15 @@ void MainMenu::Init_Variable()
 
 		Load_Menu_Text.close();
 	}
-	
 }
-
 
 
 MainMenu::MainMenu() : Menu_Selection(0)
 { 
 
 	this->Init_Variable();
+	
+
 	
 }
 
@@ -35,41 +34,41 @@ MainMenu::~MainMenu()
 
 void MainMenu::Menu()
 {
+	cout << "\n\nVolba : ";
+	cin >> this->Menu_Selection;
 	switch (this->Menu_Selection)
 	{
+	// New Game
 	case 1:
 	{
-		// New Game
-
+		cout << "a";
 		break;
 	}
+	// Load
 	case 2:
 	{
-		// Load
-
+		cout << "b";
 		break;
 	}
+	// Options
 	case 3:
 	{
-		// Options
-
+		cout << "c";
 		break;
 	}
+	//Exit
 	case 4:
 	{
-		//Exit
 
-		break;
+		return exit(0);
 	}
-	default:
+	default: 
 		break;
 	}
 }
 
 
-
 void MainMenu::Update()
 {
 	this->Menu();
-	
 }
