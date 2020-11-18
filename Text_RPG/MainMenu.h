@@ -14,7 +14,7 @@ private:
 	unsigned short Menu_Selection;
 
 	string Menu_Text;
-
+	
 	
 
 

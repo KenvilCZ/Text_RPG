@@ -22,7 +22,7 @@ void MainMenu::Init_Variable()
 
 
 MainMenu::MainMenu() : Menu_Selection(0)
-{
+{ 
 
 	this->Init_Variable();
 	

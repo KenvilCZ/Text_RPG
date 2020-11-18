@@ -9,7 +9,7 @@ private:
 
 public:
 
-	MainMenu* m_Main_Menu;
+	MainMenu* m_Main_Menu; 
 
 	void Init_Variable();
 

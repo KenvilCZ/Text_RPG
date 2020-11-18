@@ -4,7 +4,7 @@ void Core::Init_Variable()
 {
 	this->Exit = false;
 	this->m_Main_Menu = new MainMenu;
-}
+} 
 
 Core::Core() : Exit(false)
 {
