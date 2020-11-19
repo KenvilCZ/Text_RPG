@@ -1,6 +1,8 @@
 #include "MainMenu.h"
 
 
+//Init Variables
+
 void MainMenu::Init_Variable()
 {
 	this->Menu_Selection = 0;
@@ -17,21 +19,19 @@ void MainMenu::Init_Variable()
 	}
 }
 
-
+//Constructor
 MainMenu::MainMenu() : Menu_Selection(0)
 { 
 
 	this->Init_Variable();
-	
-
-	
 }
-
+//Destructor
 MainMenu::~MainMenu()
 {
+	cout << "Delete MainMenu" << endl;
 }
 
-
+// Function
 void MainMenu::Menu()
 {
 	cout << "\n\nVolba : ";
@@ -41,7 +41,7 @@ void MainMenu::Menu()
 	// New Game
 	case 1:
 	{
-		cout << "a";
+		this->New_Game();
 		break;
 	}
 	// Load
@@ -67,6 +67,12 @@ void MainMenu::Menu()
 	}
 }
 
+bool MainMenu::New_Game() const
+{
+	return true;
+}
+ 
+//Update
 
 void MainMenu::Update()
 {
