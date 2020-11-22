@@ -43,32 +43,32 @@ public:
 
 	// Functions
 
-	unsigned int Get_Wood() const;
-	unsigned int Get_Stone() const;
-	unsigned int Get_Eat() const;
-	unsigned int Get_Iron() const;
-	unsigned int Get_Coal() const;
-	unsigned int Get_Population() const;
-	unsigned int Get_Worker() const;
-	unsigned int Get_Mens() const;
-	unsigned int Get_Womens() const;
-	unsigned int Get_Kids() const;
-	unsigned int Get_Army() const;
+	//unsigned int Get_Wood() const;
+	//unsigned int Get_Stone() const;
+	//unsigned int Get_Eat() const;
+	//unsigned int Get_Iron() const;
+	//unsigned int Get_Coal() const;
+	//unsigned int Get_Population() const;
+	//unsigned int Get_Worker() const;
+	//unsigned int Get_Mens() const;
+	//unsigned int Get_Womens() const;
+	//unsigned int Get_Kids() const;
+	//unsigned int Get_Army() const;
 
-	void Set_Wood(int sum, float& dt);
-	void Set_Stone(int sum, float& dt);
-	void Set_Eat(int sum, float& dt);
-	void Set_Iron(int sum, float& dt);
-	void Set_Coal(int sum, float& dt);
-	void Set_Population();
-	void Set_Worker(int sum, float& dt);
-	void Set_Mens(int sum, float& dt);
-	void Set_Womens(int sum, float& dt);
-	void Set_Kids(int sum, float& dt);
-	void Set_Army(int sum, float& dt);
-	
+	//void Set_Wood(int sum, float& dt);
+	//void Set_Stone(int sum, float& dt);
+	//void Set_Eat(int sum, float& dt);
+	//void Set_Iron(int sum, float& dt);
+	//void Set_Coal(int sum, float& dt);
+	//void Set_Population();
+	//void Set_Worker(int sum, float& dt);
+	//void Set_Mens(int sum, float& dt);
+	//void Set_Womens(int sum, float& dt);
+	//void Set_Kids(int sum, float& dt);
+	//void Set_Army(int sum, float& dt);
+	//
 
-	
-	virtual void Update();
+	//
+	//virtual void Update();
 };
 

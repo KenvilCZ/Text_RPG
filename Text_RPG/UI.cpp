@@ -10,7 +10,7 @@ UI::~UI()
 
 void UI::Text_UI()
 {
-	cout << 
+
 }
 
 void UI::Update()
