@@ -6,7 +6,10 @@
 void MainMenu::Init_Variable()
 {
 	this->Menu_Selection = 0;
+	this->Start = false;
 
+	// Load TEXT DATA
+	system("Cls");
 	ifstream Load_Menu_Text("Data_Text/Menu_CS.loc");
 	if (Load_Menu_Text.is_open())
 	{
@@ -20,20 +23,20 @@ void MainMenu::Init_Variable()
 }
 
 //Constructor
-MainMenu::MainMenu() : Menu_Selection(0)
+MainMenu::MainMenu() 
 { 
-
 	this->Init_Variable();
 }
 //Destructor
 MainMenu::~MainMenu()
 {
-	cout << "Delete MainMenu" << endl;
+	cout << "Delete MainMenu.h" << endl;
 }
 
 // Function
 void MainMenu::Menu()
 {
+	// Choice of option on start Game
 	cout << "\n\nVolba : ";
 	cin >> this->Menu_Selection;
 	switch (this->Menu_Selection)
@@ -41,6 +44,7 @@ void MainMenu::Menu()
 	// New Game
 	case 1:
 	{
+		this->Start = true;
 		this->New_Game();
 		break;
 	}
@@ -69,7 +73,8 @@ void MainMenu::Menu()
 
 bool MainMenu::New_Game() const
 {
-	return true;
+	// Retur true for NewGame
+	return this->Start;
 }
  
 //Update

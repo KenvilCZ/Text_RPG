@@ -11,6 +11,7 @@ private:
 	// Variable
 	unsigned int Menu_Selection;
 	string Menu_Text;
+	bool Start;
 
 public:
 
