@@ -2,30 +2,38 @@
 #include <iostream>
 #include <string>
 #include <fstream>
+#include "MainMenu.h"
 
 using namespace std;
 
-enum Character { Viking = 1, Human }e_Character;
+ enum Character { Viking = 1, Human };
 
 class NewGame
 {
 private:
 
+	// Variables
 	string Player_Name;
+	Character e_Character;
+	MainMenu* m_Main_Menu = nullptr;
 	
 	
-
 public:
 
+	// Constructro /Destructor
 	NewGame();
 	virtual ~NewGame();
 
-	void Get_Player_Name();
-	void Get_Select_Character();
+	// Function
+	void Set_Player_Name();
+	void Set_Select_Character();
 
-	string Set_Player_Name() const;
-	unsigned short Set_Select_Character() const;
+	void Save_Player_Settings(string(Get_Name), unsigned short(Get_Character));
 
+	string Get_Player_Name() ;
+	unsigned short Get_Select_Character() const;
+
+	virtual void Update();
 
 };
 
