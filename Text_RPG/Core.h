@@ -20,9 +20,6 @@ public:
 	Core();
 	virtual ~Core();
 
-	//Fucntion
-	
-	// Update
 	void Update();
 	void Run();
 };
