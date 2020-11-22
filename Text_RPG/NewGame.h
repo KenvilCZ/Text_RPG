@@ -27,5 +27,6 @@ public:
 	unsigned short Set_Select_Character() const;
 
 
+
 };
 

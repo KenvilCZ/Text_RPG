@@ -30,12 +30,12 @@ void NewGame::Get_Select_Character()
 	{
 	case 1:
 	{
-		e_Character = Viking;
+		Character::Viking;
 		break;
 	}
 	case 2:
 	{
-		e_Character = Human;
+		Character::Human;
 		break;
 	}
 	default:
@@ -54,3 +54,4 @@ unsigned short NewGame::Set_Select_Character() const
 {
 	return e_Character;
 }
+
